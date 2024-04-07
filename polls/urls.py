@@ -4,7 +4,8 @@ from django.urls import path
 # 127.0.0.1:8000/polls/index
 
 
-# specific to polls app
+# specific to polls app this is avoid conflict
+app_name = "polls"
 urlpatterns = [
     path("", views.index, name="index"),
     path('/about', views.about, name="about"),
